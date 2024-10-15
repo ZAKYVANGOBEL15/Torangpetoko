@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Poppins;
+}
+.darkmode {
+    background-color: black;
+}
+header {
+    width: 100%;
+    align-items: center;
+    background-color: transparent;
+    height: 5rem;
+}
+nav {
+    width: 100%;
+    height: 5rem;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+}
+span {
+    color: #3A6D8C;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+.login a {
+    text-decoration: none;
+    font-size: 10px;
+    color: #001F3F;
+}
+.login a:hover {
+    text-decoration: none;
+    font-size: 10px;
+    color: #3A6D8C;
+}
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: #3A6D8C;
+    align-items: center;
+    transition: .3s ease-in-out;
+}
+.fiture {
+    gap: 10px;
+    display: flex;
+}
+aside {
+    display: none;
+}
+.aside2 {
+    display: none;
+}
+
+
+.active {
+    color: #007bff;
+}
+
+@media screen and (max-width: 740px){
+
+
+    body {
+        font-size: 10px;
+    }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
+        transform: rotate(90deg);
+
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        height: 35px;
+        background-color: black;
+        width: 5px;
+        border-radius: 15px;
+        margin: 4px;
+        transition: .3s ease-in-out;
+    }
+    .change .bar1 {
+        transform: translate(11px, 0px) rotate(-45deg);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        transform: translate(-15px, 0px) rotate(-135deg);
+    }
+    nav ul {
+        display: none;
+    }
+    .login {
+        display: flex;
+    }
+
+    img {
+        height: 100px;
+    }
+    aside {
+        width: 100%;
+        height: 50vh;
+        margin-left: -800px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        background-color: #3A6D8C;
+    }
+    aside ul {
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    aside ul li {
+        list-style: none;
+    }
+    aside ul li a {
+        color: white;
+        font-size: 15px;
+        text-decoration: none;
+    
+    }
+    aside ul li a:hover {
+        color: #007bff;
+        font-size: 15px;
+        text-decoration: none;
+    
+    }
+    .aside2 {
+        display: flex;
+        margin-left: 0;
+        position: relative;
+    }
+    
+}
+
+
+.banner {
+    background-image: url('../asset/img/2024-QLED.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height: 80vh;
+}
+.banner_title {
+    position: absolute;
+    margin-top: 150px;
+    text-align: center;
+}
+.banner_title a {
+    font-size: 10px;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+}
+.banner_title a:hover {
+    font-size: 10px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.932);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.527);
+    border-radius: 20px;
+}
+
+/* Product */
+
+.product {
+    margin: 0 auto;
+    height: auto;
+    width: 90%;
+}
+.product h1 {
+    text-align: center;
+}
+.card {
+    justify-content: space-around;
+    width: 80%;
+    flex-flow: wrap row;
+    margin: 0 auto;
+    display: flex;
+}
+.card_1, .card_2, .card_3, .card_4, .card_5, .card_6{
+    background-color: #ffffff;
+    padding: 1rem;
+    scale: 1;
+    transition: .3s ease-in-out;
+    gap: 10px;
+    opacity: 1;
+    border-radius: 20px;
+    text-align: center;
+}
+.card_1:hover, .card_2:hover, .card_3:hover, .card_4:hover, .card_5:hover, .card_6:hover {
+    background-color: #ffffff;
+    padding: 1rem;
+    scale: 1.05;
+    opacity: 0.8;
+    gap: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.card_1 a, .card_2 a, .card_3 a, .card_4 a, .card_5 a, .card_6 a {
+    color: white;
+    text-decoration: none;    
+    padding: 0.5rem;
+    transition: .3s ease-in-out;
+    border-radius: 130px;
+    background-color: black;
+
+}
+
+
+/* Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+#loginBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+form {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+form input {
+    width: 100%;
+    padding: 5px;
+}
+form button {
+    background-color: #007bff;
+    padding: 7px;
+    border: none;
+    color: white;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
