@@ -158,6 +158,16 @@ aside {
     }
     
 }
+@media screen and (max-width: 370px){
+
+    body {
+        font-size: 10px;
+    }
+    img {
+        height: 90px;
+    }
+    
+}
 
 
 .banner {
@@ -172,7 +182,7 @@ aside {
 }
 .banner_title {
     position: absolute;
-    margin-top: 150px;
+    margin-top: 50px;
     text-align: center;
 }
 .banner_title a {
@@ -206,13 +216,13 @@ aside {
 .card {
     justify-content: space-around;
     width: 80%;
+    gap: 30px;
     flex-flow: wrap row;
     margin: 0 auto;
     display: flex;
 }
 .card_1, .card_2, .card_3, .card_4, .card_5, .card_6{
     background-color: #ffffff;
-    padding: 1rem;
     scale: 1;
     transition: .3s ease-in-out;
     gap: 10px;
@@ -222,7 +232,6 @@ aside {
 }
 .card_1:hover, .card_2:hover, .card_3:hover, .card_4:hover, .card_5:hover, .card_6:hover {
     background-color: #ffffff;
-    padding: 1rem;
     scale: 1.05;
     opacity: 0.8;
     gap: 10px;
